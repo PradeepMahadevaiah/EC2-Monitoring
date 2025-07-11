@@ -1,0 +1,18 @@
+{
+  "AlarmName": "HighCPUUtilization",
+  "AlarmDescription": "Alarm when CPU exceeds 60%",
+  "ActionsEnabled": true,
+  "MetricName": "CPUUtilization",
+  "Namespace": "AWS/EC2",
+  "Statistic": "Average",
+  "Dimensions": [
+    {
+      "Name": "InstanceId",
+      "Value": "i-xxxxxxxxxxxxxxxxx"
+    }
+  ],
+  "Period": 300,
+  "EvaluationPeriods": 2,
+  "Threshold": 60.0,
+  "ComparisonOperator": "GreaterThanThreshold"
+}
